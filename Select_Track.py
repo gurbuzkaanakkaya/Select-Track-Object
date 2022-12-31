@@ -116,8 +116,8 @@ def servo(bbox): # Servo motorlarına gönderilecek olan komutlar
     # Ana Frame ekranda merkez noktası (320, 240), o halde kamera merkezini obje merkezine yakınsak oranlarda ayarlayabilmek için
     if center_x < 300 and center_x > 340 : # Obje x merkezi ana frame x ekseni üstünde 300-340 arasında ise son konum değeri kalsın
         print("kilitlendi_x")
-        xlis.append(xlis[len(xlis)-1]) # Blunduğu açı kaç derecede ise listeye onu ekle 
-        xlis.remove(xlis[0]) # İlk elemanı/önceki elemanı sil
+        xlis.append(xlis[len(xlis)-1]) # Bulunduğu açı kaç derecede ise listeye onu ekle 
+        xlis.remove(xlis[0]) # İlk elemanı/öncekini elemanı sil
         
 
     elif center_x > 340: # Obje kameranın solunda ise
